@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
+import styles from './Nav.module.css';
 
 const Nav = () => {
   return (
-    <div className="navigation">
+    <div className={styles.nav}>
+      <div className="logo">
+        <img src='/images/logo.png' alt="" />
+      </div>
       <ul>
         <li>
           <Link to="/">Home</Link>
