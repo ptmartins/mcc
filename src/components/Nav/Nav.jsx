@@ -1,22 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './Nav.module.css';
 
-const Nav = () => {
-
-  const menus = [
-    {
-      path: '/',
-      txt: 'Home'
-    },
-    {
-      path: '/logs',
-      txt: 'Logs'
-    },
-    {
-      path: '/about',
-      txt: 'About'
-    }
-  ]
+const Nav = ({menus}) => {
 
   return (
     <div className={styles.nav}>

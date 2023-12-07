@@ -5,9 +5,24 @@ import styles from './App.module.css';
 
 function App() {
 
+  const menus = [
+    {
+      path: '/',
+      txt: 'Home'
+    },
+    {
+      path: '/logs',
+      txt: 'Logs'
+    },
+    {
+      path: '/about',
+      txt: 'About'
+    }
+  ]
+
   return (
       <div className={styles.app}>
-        <Nav />
+        <Nav menus={menus}/>
         <div className={styles.content}>
         <Routes>
           <Route path="/" element={ <Home /> } />
