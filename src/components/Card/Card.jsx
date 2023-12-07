@@ -1,7 +1,16 @@
 import styles from './Card.module.css';
 
-const Card = () => {
-    <div className={styles.card}></div>
+const Card = ({ title, children}) => {
+    return(
+        <div className={ styles.card }>
+            <header className={ styles.header }>
+                <h1> { title } </h1>
+            </header>
+            <div className={styles.body}>
+                { children }
+            </div>
+        </div>
+    )
 }
 
 export default Card;
