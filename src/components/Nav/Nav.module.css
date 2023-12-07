@@ -1,0 +1,15 @@
+.nav {
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 1.5rem;
+    width: 240px;
+}
+
+.logo {
+    margin-block-end: 3rem;
+    width: 75%;
+}
+
+.nav_listItem {
+    margin-block-end: .75rem;;
+}

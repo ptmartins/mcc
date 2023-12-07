@@ -2,21 +2,35 @@ import { Link } from 'react-router-dom';
 import styles from './Nav.module.css';
 
 const Nav = () => {
+
+  const menus = [
+    {
+      path: '/',
+      txt: 'Home'
+    },
+    {
+      path: '/logs',
+      txt: 'Logs'
+    },
+    {
+      path: '/about',
+      txt: 'About'
+    }
+  ]
+
   return (
     <div className={styles.nav}>
       <div className="logo">
-        <img src='/images/logo.png' alt="" />
+        <img src='/images/logo.png' alt="Imagen logo" title="Imagen" className={styles.logo} />
       </div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/logs">Logs</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
+      <ul className={styles.nav_list}>
+        {menus.map(menu => {
+          return(
+            <li className={styles.nav_listItem}>
+              <Link to={ menu.path } className={`u-link ${styles.nav_link}`}> { menu.txt } </Link>
+            </li>
+          )
+        })}
       </ul>
     </div>
   );

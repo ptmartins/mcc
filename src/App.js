@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 import Nav from './components/Nav/Nav';
 import { Home, Logs, About } from './pages';
-import './App.css';
+import styles from './App.module.css';
 
 function App() {
 
   return (
-      <div className="app-container">
+      <div className={styles.app}>
         <Nav />
-        <div>
+        <div className={styles.content}>
         <Routes>
           <Route path="/" element={ <Home /> } />
           <Route path="/about" element={ <About /> } />
