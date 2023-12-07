@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { v4 as uuid } from 'uuid';
 import styles from './Nav.module.css';
 
 const Nav = ({menus}) => {
@@ -11,7 +12,7 @@ const Nav = ({menus}) => {
       <ul className={styles.nav_list}>
         {menus.map(menu => {
           return(
-            <li className={styles.nav_listItem}>
+            <li key={uuid()} className={styles.nav_listItem}>
               <Link to={ menu.path } className={`u-link ${styles.nav_link}`}> { menu.txt } </Link>
             </li>
           )

@@ -1,5 +1,10 @@
+import { PageLayout } from '../../components';
+
 export default function Home() {
     return(
-        <h1>Home</h1>    
+        <PageLayout title="FFT">
+            <h1>Home odjoejwdoj</h1>  
+        </PageLayout>
+  
     )
 }
