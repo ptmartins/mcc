@@ -1,5 +1,6 @@
 .nav {
     background-color: #fff;
+    flex-shrink: 0;
     min-height: 100vh;
     padding: 1.5rem;
     width: 240px;
