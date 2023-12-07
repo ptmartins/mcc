@@ -1,4 +1,5 @@
 .card {
     background-color: #fff;
+    margin-block-end: 1.5rem;  
     padding: 1.5rem;
 }
