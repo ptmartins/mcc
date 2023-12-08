@@ -9,12 +9,14 @@ server.use(middlewares);
 const data1 = require('./data/info.json');
 const data2 = require('./data/license.json');
 const data3 = require('./data/general.json');
+const data4 = require('./data/certificates.json');
 
 const combinedData = {
   info: data1.info,
   license: data2.licences,
   plugins: data2.plugins,
-  general: data3
+  general: data3,
+  certificates: data4.certificates
 };
 
 const router = jsonServer.router(combinedData);

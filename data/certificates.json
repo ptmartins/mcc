@@ -1,0 +1,44 @@
+{
+    "certificates": [
+        {
+            "ID": 0,
+            "serialID": "493668499533967878181438251928619424697781040933",
+            "issuedTo": "USR-PEDRO",
+            "issuedBy": "USR-PEDRO",
+            "validFrom": "06/02/23 to 06/02/24",
+            "validTSFrom": "2023-02-06T13:43:54.000Z",
+            "validTSTo": "2024-02-06T13:43:54.000Z",
+            "fingerprint": "e15324e4e07c5b00586d9ad3983b8c93aea73bd1",
+            "otherInfo": [
+                "Ensures the identity of a remote computer",
+                "Proves your identity to a remote computer",
+                "Compatible for use with Netscape SSL server",
+                "Signs e-mail messages",
+                "Protects e-mail messages",
+                "Can be used to sign a certificate revocation list",
+                "Can be used for any/all purposes",
+                "Can be used for OCSP requests"
+            ]
+        },
+        {
+            "ID": 1,
+            "serialID": "21155127238176524966540206276049607637797981096",
+            "issuedTo": "USR-PEDRO",
+            "issuedBy": "USR-PEDRO",
+            "validFrom": "26/05/23 to 25/05/24",
+            "validTSFrom": "2023-05-26T12:08:04.000Z",
+            "validTSTo": "2024-05-25T12:08:04.000Z",
+            "fingerprint": "3f743dfbab94c3bd085feb1728dcb77b238ab433",
+            "otherInfo": [
+                "Ensures the identity of a remote computer",
+                "Proves your identity to a remote computer",
+                "Compatible for use with Netscape SSL server",
+                "Signs e-mail messages",
+                "Protects e-mail messages",
+                "Can be used to sign a certificate revocation list",
+                "Can be used for any/all purposes",
+                "Can be used for OCSP requests"
+            ]
+        }
+    ]
+}
