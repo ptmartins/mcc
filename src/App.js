@@ -90,8 +90,6 @@ function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
-  console.log(isLoggedIn);
-
   return (
       <div className={ styles.app }>
         <Nav menus={menus}/>
