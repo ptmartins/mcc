@@ -1,0 +1,44 @@
+.tabbed_menu {
+    font-family: Arial, sans-serif;
+}
+
+.tab_buttons {
+    border-bottom: 1px solid #828282;
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.tab_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 1.5rem;    
+    outline: none;
+    padding: .75rem 0;
+    transition: all .2s eas-in;
+}
+
+.tab_button:first-child {
+    margin-inline-start: 0;
+}
+
+.tab_button.active {
+    color: #335ed7;
+}
+
+.slider {
+    background-color: #335ed7;
+    bottom: -3px;
+    display: inline-block;
+    height: 5px;
+    position: absolute;
+    transition: all .3s ease-in;
+}
+
+.tab_content {
+    padding: 1.5rem 0;
+}
+
