@@ -8,15 +8,17 @@ server.use(middlewares);
 
 const data1 = require('./data/info.json');
 const data2 = require('./data/license.json');
+const data3 = require('./data/general.json');
 
 const combinedData = {
   info: data1.info,
-  license: data2.licences
+  license: data2.licences,
+  general: data3
 };
 
 const router = jsonServer.router(combinedData);
 
-server.use('/api', router); // Prefix all routes with '/api'
+server.use('/api', router);
 
 const PORT = process.env.PORT || 3001;
 

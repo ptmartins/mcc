@@ -1,13 +1,8 @@
-.header {
-
-}
-
 .main {
     flex-grow: 1;
     padding: 1.5rem 0;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
+.title {
+    margin-block-end: 1.5rem;
 }

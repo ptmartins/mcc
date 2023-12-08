@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Nav } from './components';
+import { Nav, Header, Footer } from './components';
 import { Home, Logs, About } from './pages';
 import styles from './App.module.css';
 
@@ -24,11 +24,13 @@ function App() {
       <div className={styles.app}>
         <Nav menus={menus}/>
         <div className={styles.content}>
-        <Routes>
-          <Route path="/" element={ <Home /> } />
-          <Route path="/about" element={ <About /> } />
-          <Route path="/logs" element={ <Logs /> } />
-        </Routes>
+          <Header />
+          <Routes>
+            <Route path="/" element={ <Home /> } />
+            <Route path="/about" element={ <About /> } />
+            <Route path="/logs" element={ <Logs /> } />
+          </Routes>
+          <Footer />
         </div>
       </div>
   );

@@ -6,4 +6,10 @@
 
 .title {
     font-size: 1.3rem;
+    margin-block-end: 1.5rem;
+}
+
+.card span {
+    font-weight: 700;
+    margin-inline-end: .75rem;
 }

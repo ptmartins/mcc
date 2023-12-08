@@ -10,8 +10,6 @@ export default function About() {
             const response = await fetch('http://localhost:3001/api/info');
             const result = await response.json();
             setData(result); 
-
-            console.log(data);
         }
 
         fetchData();
