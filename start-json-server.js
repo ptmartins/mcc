@@ -13,6 +13,7 @@ const data3 = require('./data/general.json');
 const combinedData = {
   info: data1.info,
   license: data2.licences,
+  plugins: data2.plugins,
   general: data3
 };
 

@@ -1,0 +1,31 @@
+.icon {
+    color: var(--title-color);
+    margin-inline-end: .75rem;;
+}
+
+.address,
+.phone {
+    align-items: center;
+    display: flex;
+}
+
+.address {
+    align-items: start;
+    margin-block-end: 1.5rem;
+}
+
+.phone span {
+    color: var(--font-color);
+    font-weight: 400;
+}
+
+.plugin {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: .375rem;
+}
+
+.version {
+    font-weight: 200;
+}

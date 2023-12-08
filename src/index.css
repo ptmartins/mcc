@@ -8,6 +8,7 @@
   --accent-fade: #f3f4ff;
   --menuItem-color: var(--font-color);
   --app-border-color: #d5d8da;
+  --shadow: rgba(0, 10, 50, .18);
 
   --default-transition: all .2s ease-in;
 }
@@ -48,4 +49,18 @@ ul {
 .u-link {
   color: var(--font-color);
   text-decoration: none;
+}
+
+.half_half,
+.thirds {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half_half > * {
+  width: 49%;
+}
+
+.thirds > * {
+  width: 33%;
 }

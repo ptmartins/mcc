@@ -1,8 +1,10 @@
 .nav {
     background-color: #fff;
-    flex-shrink: 0;
-    min-height: 100vh;
+    inset-inline-start: 0;
+    height: 100vh;
     padding: 1.5rem;
+    position: fixed;
+    top: 0;
     width: 280px;
 }
 

@@ -1,11 +1,7 @@
-.app {
-    display: flex;
-}
-
 .content {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    margin-inline-start: 280px;
     padding: 1.5rem;
 }
 
