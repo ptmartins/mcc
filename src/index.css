@@ -3,6 +3,8 @@
 :root {
   --bg-color: #f3f4f6;
   --font-color: #333;
+  --accent-color: #3b63f6;
+  --accent-fade: #f3f4ff;
 
   --default-transition: all .2s ease-in;
 }
