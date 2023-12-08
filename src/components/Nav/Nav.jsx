@@ -9,25 +9,30 @@ const Nav = ({menus}) => {
       <div className="logo">
         <img src='/images/logo.png' alt="Imagen logo" title="Imagen" className={styles.logo} />
       </div>
-      {
-        Object.keys(menus).map(key => {
-          return(
-            <div key={ key } className="">
-              <h4> { key } </h4>
-              <ul>
-                {menus[key].map((item, index) => {
-                  return(
-                    <li key={ uuid() }>
-                      <Link to={ item.path } className={`u-link ${styles.nav_link}`}> { item.txt } </Link>
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          )
-        })
-      }
+      <div className={styles.menu}>
+        {
+          Object.keys(menus).map(key => {
 
+            // Capitalize key title
+            const title = key.charAt(0).toUpperCase() + key.slice(1);
+
+            return(
+              <div key={ key } className={styles.block}>
+                <h4 className={styles.menu_title}> { title } </h4>
+                <ul>
+                  {menus[key].map((item, index) => {
+                    return(
+                      <li key={ uuid() } className={styles.menu_listItem}>
+                        <Link to={ item.path } className={`u-link ${styles.nav_link}`}> { item.txt } </Link>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            )
+          })
+        }
+      </div>
     </div>
   );
 };

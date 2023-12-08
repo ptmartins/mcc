@@ -11,6 +11,20 @@
     width: 75%;
 }
 
-.nav_listItem {
-    margin-block-end: .75rem;;
+.block {
+    margin-block-end: 1.5rem;
+}
+
+.menu_title {
+    margin-block-end: .375rem;
+}
+
+.menu_listItem {
+    margin-block-end: .375rem;
+    padding: .1875rem;
+    transition: var(--default-transition);
+}
+
+.menu_listItem:hover {
+    background-color: aliceblue;
 }

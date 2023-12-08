@@ -3,6 +3,8 @@
 :root {
   --bg-color: #f3f4f6;
   --font-color: #333;
+
+  --default-transition: all .2s ease-in;
 }
 
 * {
