@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Nav, Header, Footer } from './components';
-import { Home, Logs, About } from './pages';
+import { Home, Logs, About, NotFound } from './pages';
 import { FaHome, FaInfoCircle, FaClipboardList, FaCog, FaDatabase, FaBriefcase, FaLayerGroup, FaTools, FaStethoscope } from "react-icons/fa";
 import { HiQueueList } from "react-icons/hi2";
 import { MdAccountCircle, MdOutlineSystemUpdateAlt } from "react-icons/md";
@@ -92,11 +92,14 @@ return (
       <Nav menus={menus}/>
       <div className={styles.content}>
         <Header />
-        <Routes>
-          <Route path="/" element={ <Home /> } />
-          <Route path="/about" element={ <About /> } />
-          <Route path="/logs" element={ <Logs /> } />
-        </Routes>
+        <main className={styles.main}>
+          <Routes>
+            <Route path="/" element={ <Home /> } />
+            <Route path="/about" element={ <About /> } />
+            <Route path="/logs" element={ <Logs /> } />
+            <Route path='*' element={<NotFound />}/>
+          </Routes>
+        </main>
         <Footer />
       </div>
     </div>
