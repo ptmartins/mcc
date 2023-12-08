@@ -15,6 +15,8 @@ export default function Home() {
 
     // Fetch data every 10 secs like our MCC
     useEffect(() => {
+        fetchData();
+
         const dataInterval = setInterval(() => {
             fetchData();
         }, 10000)
