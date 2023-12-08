@@ -11,6 +11,10 @@ const data2 = require('./data/license.json');
 const data3 = require('./data/general.json');
 const data4 = require('./data/certificates.json');
 const data5 = require('./data/diagnostics.json');
+const data6 = require('./data/updates.json');
+const data7 = require('./data/resourceGroups.json');
+const data8 = require('./data/applications.json');
+
 
 const combinedData = {
   info: data1.info,
@@ -18,7 +22,10 @@ const combinedData = {
   plugins: data2.plugins,
   general: data3,
   certificates: data4.certificates,
-  diagnostics: data5.dumpfiles
+  diagnostics: data5.dumpfiles,
+  updates: data6,
+  resourceGroups: data7,
+  applications: data8.applications
 };
 
 const router = jsonServer.router(combinedData);

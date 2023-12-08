@@ -1,0 +1,58 @@
+{
+    "applications": [
+        {
+            "id": "flGtJ9sxcsx42Wd5xxTU",
+            "name": "Resource Plugin",
+            "database": "-1",
+            "contact": "",
+            "created": "2023-02-06 13:43:49Z",
+            "enabled": true,
+            "built_in": true
+        },
+        {
+            "id": "rrWzVoiPiYwOZ6Lv3502",
+            "name": "ImagenWeb_2",
+            "database": "2",
+            "contact": "",
+            "created": "2023-02-07T10:19:19Z",
+            "enabled": true,
+            "built_in": false
+        },
+        {
+            "id": "XGtTJS8Vnc8HVpTkNiSh",
+            "name": "ImagenWeb_3",
+            "database": "3",
+            "contact": "",
+            "created": "2023-11-21T13:39:18Z",
+            "enabled": true,
+            "built_in": false
+        },
+        {
+            "id": "Q8X7T3WEomcCDMLl6SnX",
+            "name": "ImagenWeb_IMG",
+            "database": "3",
+            "contact": "",
+            "created": "2023-11-16T12:03:27Z",
+            "enabled": true,
+            "built_in": false
+        },
+        {
+            "id": "e9kcttntGpcHscQKNwUC",
+            "name": "Workflow Editor",
+            "database": "-1",
+            "contact": "",
+            "created": "2023-02-07T10:01:44Z",
+            "enabled": true,
+            "built_in": false
+        },
+        {
+            "id": "MPKIBoUfcT2tDN0UWDJM",
+            "name": "MediaMaster",
+            "database": "2",
+            "contact": "pedro.martins@imagen.io",
+            "created": "2023-07-05T14:51:32Z",
+            "enabled": true,
+            "built_in": false
+        }
+    ]
+}

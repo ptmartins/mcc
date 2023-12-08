@@ -1,0 +1,9 @@
+{
+    "resourceGroups": [
+        {
+            "name": "Storage",
+            "storageService": "https://usr-pedro:7777"
+        }
+    ],
+    "oldStorage": []
+}
