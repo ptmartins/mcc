@@ -9,15 +9,25 @@ const Nav = ({menus}) => {
       <div className="logo">
         <img src='/images/logo.png' alt="Imagen logo" title="Imagen" className={styles.logo} />
       </div>
-      <ul className={styles.nav_list}>
-        {menus.map(menu => {
+      {
+        Object.keys(menus).map(key => {
           return(
-            <li key={uuid()} className={styles.nav_listItem}>
-              <Link to={ menu.path } className={`u-link ${styles.nav_link}`}> { menu.txt } </Link>
-            </li>
+            <div key={ key } className="">
+              <h4> { key } </h4>
+              <ul>
+                {menus[key].map((item, index) => {
+                  return(
+                    <li key={ uuid() }>
+                      <Link to={ item.path } className={`u-link ${styles.nav_link}`}> { item.txt } </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
           )
-        })}
-      </ul>
+        })
+      }
+
     </div>
   );
 };
