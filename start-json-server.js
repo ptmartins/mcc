@@ -14,7 +14,7 @@ const data5 = require('./data/diagnostics.json');
 const data6 = require('./data/updates.json');
 const data7 = require('./data/resourceGroups.json');
 const data8 = require('./data/applications.json');
-
+const data9 = require('./data/schema.json');
 
 const combinedData = {
   info: data1.info,
@@ -25,7 +25,9 @@ const combinedData = {
   diagnostics: data5.dumpfiles,
   updates: data6,
   resourceGroups: data7,
-  applications: data8.applications
+  applications: data8.applications,
+  schema: data9,
+  
 };
 
 const router = jsonServer.router(combinedData);
