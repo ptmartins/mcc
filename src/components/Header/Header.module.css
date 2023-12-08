@@ -1,5 +1,34 @@
 .header {
-    border-block-end: 1px solid var(--font-color);
+    align-items: center;
+    border-block-end: 1px solid var(--app-border-color);
+    display: flex;
+    justify-content: space-between;
     margin-block-end: 1.5rem;
     padding-block-end: 1.5rem;
+}
+
+.version {
+    color: var(--font-color);
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-inline-start: .75rem;
+}
+
+.welcome {
+    margin: 0 3rem 0 auto;
+}
+
+.logout {
+    align-items: center;
+    background-color: var(--title-color);
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    font-size: 1.3rem;
+    padding: .75rem;
+    transition: var(--default-transition);
+}
+
+.logout:hover {
+    background-color: var(--accent-color);
 }

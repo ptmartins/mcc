@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;600&family=Open+Sans:ital,wght@0,300;0,700;1,400&family=Poppins:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 
 :root {
   --bg-color: #f3f4f6;
@@ -7,6 +7,7 @@
   --accent-color: #3b63f6;
   --accent-fade: #f3f4ff;
   --menuItem-color: var(--font-color);
+  --app-border-color: #d5d8da;
 
   --default-transition: all .2s ease-in;
 }
@@ -32,6 +33,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--title-color);
+  font-weight: 600;
 }
 
 p {

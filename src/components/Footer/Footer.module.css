@@ -1,5 +1,5 @@
 .footer {
-    border-block-start: 1px solid var(--font-color);
+    border-block-start: 1px solid var(--app-border-color);
     display: flex;
     font-size: 14px;
     justify-content: space-between;

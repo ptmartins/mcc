@@ -90,12 +90,14 @@ function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
+  console.log(isLoggedIn);
+
   return (
-      <div className={styles.app}>
+      <div className={ styles.app }>
         <Nav menus={menus}/>
-        <div className={styles.content}>
-          <Header />
-          <main className={styles.main}>
+        <div className={ styles.content }>
+          <Header loggedIn={ isLoggedIn }/>
+          <main className={ styles.main }>
             <Routes>
               <Route path="/" element={ <Home /> } />
               <Route path="/about" element={ <About /> } />
@@ -104,8 +106,8 @@ function App() {
             </Routes>
           </main>
           <Footer />
+          { isLoggedIn ?? <h1>coiwhcwiu</h1> }
         </div>
-        { isLoggedIn ?? 'hhihihihi'}
       </div>
   );
 }
