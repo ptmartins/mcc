@@ -26,8 +26,7 @@ const combinedData = {
   updates: data6,
   resourceGroups: data7,
   applications: data8.applications,
-  schema: data9,
-  
+  schema: data9
 };
 
 const router = jsonServer.router(combinedData);
