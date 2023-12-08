@@ -1,5 +1,6 @@
 .card {
     background-color: #fff;
+    border-radius: 8px;;
     margin-block-end: 1.5rem;  
     padding: 1.5rem;
 }
@@ -10,6 +11,7 @@
 }
 
 .card span {
+    color: var(--title-color);
     font-weight: 700;
     margin-inline-end: .75rem;
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Card, PageLayout } from '../../components';
+import { v4 as uuid } from 'uuid';
 
 export default function About() {
 
@@ -25,7 +26,7 @@ export default function About() {
                 <p>Tel. +44 (0) 1954 2620000</p>
             </Card>
             <Card title="License information">
-                {data.map(item => <p> <span>{ `${item.title}: ` }</span> { item.value } </p>)}
+                {data.map(item => <p key={ uuid() }> <span>{ `${item.title}: ` }</span> { item.value } </p>)}
             </Card>
         </PageLayout>
   

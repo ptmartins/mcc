@@ -1,0 +1,12 @@
+.notFound {
+    inset-inline-start: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-block-start: 1.5rem;
+    text-align: center;
+}

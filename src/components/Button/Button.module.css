@@ -1,0 +1,138 @@
+.btn {
+    --btn-radius: 4px;
+    
+    align-items: center;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1rem;
+    margin: .375rem;
+    padding: .75rem 1.5rem;
+    transition: all .2s ease;
+}
+
+.btn__outlined, 
+.btn__outlined.btn__primary,
+.btn__outlined.btn__danger,
+.btn__outlined.btn__success,
+.btn__outlined.btn__warning,
+.btn__outlined.btn__disabled {
+    background-color: transparent;
+    border-width: 2px;
+    color: #333;
+}
+
+.btn:hover {
+    background-color: #5a5a5a;
+    border-color: #5a5a5a;
+    opacity: .85;
+}
+
+.btn__outlined:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    opacity: 1;
+}
+
+.btn__primary {
+    background-color: #335ed7;
+    border-color: #335ed7;
+}
+
+.btn__outlined.btn__primary {
+    color: #335ed7;
+}
+
+.btn__primary:hover {
+    background-color: #537ff7;
+    border-color: #537ff7;
+}
+
+.btn__outlined.btn__primary:hover {
+    background-color: #335ed7;
+    border-color: #335ed7;
+    color: #fff;
+}
+
+
+.btn__danger {
+    background-color: #bb2d3b;
+    border-color: #bb2d3b;
+}
+
+.btn__outlined.btn__danger {
+    color: #bb2d3b;
+}
+
+.btn__danger:hover {
+    background-color: #dc4352;
+    border-color: #dc4352;
+}
+
+.btn__outlined.btn__danger:hover {
+    background-color: #bb2d3b;
+    border-color: #bb2d3b;
+    color: #fff;
+    opacity: 1;
+}
+
+.btn__success {
+    background-color: #1a972f;
+    border-color: #1a972f;
+}
+
+.btn__outlined.btn__success {
+    color: #1a972f;
+}
+
+.btn__success:hover {
+    background-color: #1bbb35;
+    border-color: #1bbb35;
+}
+
+.btn__outlined.btn__success:hover {
+    background-color: #1a972f;
+    border-color: #1a972f;
+    color: #fff;
+}
+
+.btn__warning {
+    background-color: #f9ca2d;
+    border-color: #f9ca2d;
+    color: #000;
+}
+
+.btn__outlined.btn__warning {
+    color: #f9ca2d;
+}
+
+.btn__warning:hover {
+    background-color: #ffd856;
+    border-color: #ffd856;
+}
+
+.btn__outlined.btn__warning:hover {
+    background-color: #f9ca2d;
+    border-color: #f9ca2d;
+    color: #333;
+    opacity: 1;
+}
+
+.btn__disabled {
+    cursor: initial;
+    opacity: .35;
+    pointer-events: none;
+}
+
+.btn:nth-of-type(1) {
+    margin-inline-start: 0;
+}
+
+.btn svg {
+    font-size: 1.1rem;
+    margin-inline-start: .75rem;
+}

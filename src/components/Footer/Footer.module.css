@@ -1,4 +1,8 @@
 .footer {
+    border-block-start: 1px solid var(--font-color);
     display: flex;
+    font-size: 14px;
     justify-content: space-between;
+    margin-block-start: 1.5rem;
+    padding-block-start: 1.5rem;
 }

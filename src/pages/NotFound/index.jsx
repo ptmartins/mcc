@@ -1,6 +1,11 @@
+import styles from './NotFound.module.css';
+
 const NotFound = () => {
     return(
-        <h1>Not found</h1>    
+        <div className={ styles.notFound }>
+            <img src="./images/404.png" alt="" className={ styles.icon }/>
+            <h1 className={ styles.title }>No data found</h1>
+        </div>
     )
 }
 

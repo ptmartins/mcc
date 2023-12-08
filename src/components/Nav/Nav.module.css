@@ -20,20 +20,38 @@
 }
 
 .menu_listItem {
-    align-items: center;
     border-radius: 4px;
-    display: flex;
     margin-block-end: .1875rem;
     padding: .375rem .75rem;
     transition: var(--default-transition);
 }
 
+.nav_link {
+    align-items: center;
+    color: var(--menuItem-color);
+    display: flex;
+    flex-grow: 1;
+    min-height: 24px;
+}
+
 .icon {
     align-items: center;
+    color: var(--menuItem-color);
     display: flex;
     margin-inline-end: .75rem;
 }
 
+.txt {
+    display: none;
+}
+
 .menu_listItem:hover {
     background-color: var(--accent-fade);
+}
+
+@media all and (min-width: 760px) {
+
+    .txt {
+        display: inline-block;
+    }
 }

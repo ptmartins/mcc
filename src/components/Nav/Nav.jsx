@@ -23,8 +23,10 @@ const Nav = ({menus}) => {
                   {menus[key].map((item, index) => {
                     return(
                       <li key={ uuid() } className={styles.menu_listItem}>
-                        <i className={ styles.icon }> { item.icon } </i>
-                        <Link to={ item.path } className={`u-link ${styles.nav_link}`}> { item.txt } </Link>
+                        <Link to={ item.path } className={`u-link ${styles.nav_link}`}> 
+                          <i className={ styles.icon }> { item.icon } </i>
+                          <span className={ styles.txt }> { item.txt } </span>
+                        </Link>
                       </li>
                     )
                   })}

@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 
-const Header = () => {
+const Header = ({version, user}) => {
     return(
         <header className={styles.header}>
             <h1>Media Control Centre <span>version</span> 7.1.1.872</h1>
