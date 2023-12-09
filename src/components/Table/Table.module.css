@@ -1,0 +1,18 @@
+.table {
+
+}
+
+.head {
+    border-block-end: 1px solid var(--app-border-color);
+    display: flex;
+    margin-block-end: .75rem;
+    padding: .1875rem 0 .75rem;
+}
+
+.body {
+}
+
+.row {
+    display: flex;
+    padding: .75rem 0;
+}

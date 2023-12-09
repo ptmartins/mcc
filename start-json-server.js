@@ -28,7 +28,7 @@ const combinedData = {
   resourceGroups: data7,
   applications: data8.applications,
   schema: data9,
-  databases: data10
+  databases: data10.databases
 };
 
 const router = jsonServer.router(combinedData);

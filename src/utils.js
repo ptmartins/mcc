@@ -1,4 +1,9 @@
 /**
+ * Utility functions
+ */
+
+
+/**
  * Format timestamp
  * 
  * @param {*} timestamp 

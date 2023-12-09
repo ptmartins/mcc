@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Card, PageLayout } from '../../components';
+import { Card, PageLayout, KeyValue } from '../../components';
+import { fileSizeConvert, formatTimeStamp } from '../../utils';
 
 export default function Home() {
 
@@ -28,56 +29,20 @@ export default function Home() {
         <PageLayout title="Home">
             <div className={ `half_half` }>
                 <Card title="Details">
-                    <p>
-                        <span>Version:</span>
-                        <span>{ data.version }</span>
-                    </p>
-                    <p>
-                        <span>Service running as user:</span>
-                        <span>{ data.account }</span>
-                    </p>
-                    <p>
-                        <span>Process up-time:</span>
-                        <span>{ data.up_time }</span>
-                    </p>
-                    <p>
-                        <span>System up-time:</span>
-                        <span>{ data.server_up_time }</span>
-                    </p>
-                    <p>
-                        <span>Memory usage:</span>
-                        <span>{ data.memory_usage }</span>
-                    </p>
-                    <p>
-                        <span>Databases:</span>
-                        <span>{ data.databases }</span>
-                    </p>
-                    <p>
-                        <span>Running SOLR instances:</span>
-                        <span>{ data.solr_instance }</span>
-                    </p>
-                    <p>
-                        <span>Database backup:</span>
-                        <span>{ data.last_backup }</span>
-                    </p>
+                    <KeyValue label="Version: " value={ data.version } />
+                    <KeyValue label="Service running as user: " value={ data.account } />
+                    <KeyValue label="Process up-time: " value={ formatTimeStamp(data.up_time) } />
+                    <KeyValue label="System up-time: " value={ formatTimeStamp(data.server_up_time) } />
+                    <KeyValue label="Memory usage: " value={ fileSizeConvert(data.memory_usage, undefined, ' ') } />
+                    <KeyValue label="Databases: " value={ data.databases } />
+                    <KeyValue label="Running SOLR instances: " value={ data.solr_instance } />
+                    <KeyValue label="Database backup: " value={ formatTimeStamp(data.last_backup) } /> 
                 </Card>
                 <Card title="Job counts">
-                    <p>
-                        <span>Processing:</span>
-                        <span>{ data.processing }</span>
-                    </p>
-                    <p>
-                        <span>Total completed:</span>
-                        <span>{ data.completed }</span>
-                    </p>
-                    <p>
-                        <span>Total failed:</span>
-                        <span>{ data.failed }</span>
-                    </p>
-                    <p>
-                        <span>Failed, retryable:</span>
-                        <span>{ data.retryable_jobs }</span>
-                    </p>
+                    <KeyValue label="Processing: " value={ data.processing } />
+                    <KeyValue label="Total completed: " value={ data.completed } />
+                    <KeyValue label="Total failed: " value={ data.failed } />
+                    <KeyValue label="Failed, retryable: " value={ data.retryable_jobs } />
                 </Card>
             </div>
             <div className={ `half_half` }>
