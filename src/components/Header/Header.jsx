@@ -9,14 +9,10 @@ const Header = ({ version, user, loggedIn }) => {
         <header className={ styles.header }>
             <h1>Media Control Centre <span className={ styles.version }>version 7.1.1.872</span> </h1>
 
-            { loggedIn ? 
+            { loggedIn &&
                 <>
                     <span className={styles.welcome}> { welcome } </span> 
                     <a href="/" className={`u-link ${ styles.logout }`} title="Logout" > <FiLogOut /> </a>
-                </>
-                :
-                <>
-                    <a href="/" className={`u-link ${ styles.logout }`} title="Logout" > <FiLogIn /> </a>
                 </>
             }
         </header>    

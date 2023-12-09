@@ -49,7 +49,7 @@ export default function Home() {
                 <Card title="Jobs completed in the last 12 hours">
 
                 </Card>
-                <Card title="Job failed in the last 12 hours">
+                <Card title="Jobs failed in the last 12 hours">
 
                 </Card>
             </div>
