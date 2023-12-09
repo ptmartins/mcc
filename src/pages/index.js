@@ -1,5 +1,6 @@
 import About from './About';
 import Applications from './Applications';
+import Certificates from './Certificates';
 import Databases from './Databases';
 import Diagnostics from './Diagnostics';
 import Home from './Home';
@@ -8,4 +9,4 @@ import NotFound from './NotFound';
 import ResourceGroups from './ResourceGroups';
 
 
-export { About, Applications, Databases, Diagnostics, Home, Logs, NotFound, ResourceGroups };
+export { About, Applications, Certificates, Databases, Diagnostics, Home, Logs, NotFound, ResourceGroups };

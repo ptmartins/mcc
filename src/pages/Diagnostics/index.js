@@ -23,7 +23,7 @@ const Diagnostics = () => {
         },
         {
             key: 'date',
-            label: 'StorageSDateervice',
+            label: 'Date',
             width: '35%'
         },
         {

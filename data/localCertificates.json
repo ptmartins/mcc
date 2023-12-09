@@ -1,0 +1,31 @@
+{
+    "local_certificates": [
+        {
+            "name": "File server",
+            "port": 100,
+            "issuedToO": "Imagen Ltd",
+            "issuedToOU": "Development",
+            "issuedToCN": "usr-pedro.grange.local",
+            "issuedByO": "Cambridge Imaging Systems",
+            "issuedByOU": "Cambridge Imaging Systems Certificate Authority",
+            "issuedByCN": "Cambridge Imaging Systems TLS CA",
+            "validFrom": "2021-07-29T08:44:00.000Z",
+            "validTo": "2024-07-28T08:44:00.000Z",
+            "fingerprint": "470c4f5d9a17ac041227bb2cde843133aa80d0b6"
+        },
+        {
+            "name": "Management interface",
+            "port": 83,
+            "issuedToO": "Imagen Ltd",
+            "issuedToOU": "Development",
+            "issuedToCN": "usr-pedro.grange.local",
+            "issuedByO": "Cambridge Imaging Systems",
+            "issuedByOU": "Cambridge Imaging Systems Certificate Authority",
+            "issuedByCN": "Cambridge Imaging Systems TLS CA",
+            "validFrom": "2021-07-29T08:44:00.000Z",
+            "validTo": "2024-07-28T08:44:00.000Z",
+            "fingerprint": "470c4f5d9a17ac041227bb2cde843133aa80d0b6"
+        }
+    ],
+    "enableLetsEncrypt": "0"
+}
