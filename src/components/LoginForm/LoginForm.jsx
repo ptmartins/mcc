@@ -8,7 +8,6 @@ const LoginForm = ({ cb }) => {
     const [pwd, setPwd] = useState('');
 
     const handleSubmit = () => {
-        debugger;
         if(userName === 'admin' && pwd === 'password') {
             cb(true);
         } else {
