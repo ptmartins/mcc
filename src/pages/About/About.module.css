@@ -19,13 +19,6 @@
     font-weight: 400;
 }
 
-.plugin {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-block-end: .375rem;
-}
-
 .version {
     font-weight: 200;
 }

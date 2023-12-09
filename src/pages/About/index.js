@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Card, PageLayout } from '../../components';
+import { Card, PageLayout, KeyValue } from '../../components';
 import { v4 as uuid } from 'uuid';
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -51,14 +51,14 @@ export default function About() {
                     </div>
                 </Card>
                 <Card title="License information">
-                    {info.map(item => <p key={ uuid() }> <span>{ `${item.title}: ` }</span> { item.value } </p>)}
+                    {info.map(item => <KeyValue key={ uuid() } label={item.title} value={ item.value } />)}
                 </Card>
             </div>
             <div className={ `half_half` }>
                 <Card title="Plugins" className={ styles.plugins }>
                     { plugins.map(plugin => {
                         return(
-                            <p className={ styles.plugin }> { plugin.title } <span className={ styles.version }> { plugin.version } </span> </p>    
+                            <KeyValue key={ uuid() } label={ plugin.title } value={ plugin.version } />
                         )
                     }) }
                 </Card>
