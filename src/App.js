@@ -88,29 +88,37 @@ function App() {
     ]
   };
 
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = val => {
+    setIsLoggedIn(val);
+  }
 
   return (
       <div className={ styles.app }>
-        <Nav menus={menus}/>
-        <div className={ styles.content }>
-          <Header loggedIn={ isLoggedIn }/>
-          <main className={ styles.main }>
-            <Routes>
-              <Route path="/" element={ <Home /> } />
-              <Route path="/about" element={ <About /> } />
-              <Route path="/logs" element={ <Logs /> } />
-              <Route path="/databases" element={ <Databases /> } />
-              <Route path="/applications" element={ <Applications /> } />
-              <Route path="/resourceGroups" element={ <ResourceGroups /> } />
-              <Route path="/diagnostics" element={ <Diagnostics /> } />
-              <Route path="/certificates" element={ <Certificates /> } />
-              <Route path='*' element={<NotFound />}/>
-            </Routes>
-          </main>
-          <Footer />
-          { isLoggedIn ?? <h1>coiwhcwiu</h1> }
-        </div>
+        {isLoggedIn &&
+          <>
+            <Nav menus={menus}/>
+            <div className={ styles.content }>
+              <Header loggedIn={ isLoggedIn }/>
+              <main className={ styles.main }>
+                <Routes>
+                  <Route path="/" element={ <Home /> } />
+                  <Route path="/about" element={ <About /> } />
+                  <Route path="/logs" element={ <Logs /> } />
+                  <Route path="/databases" element={ <Databases /> } />
+                  <Route path="/applications" element={ <Applications /> } />
+                  <Route path="/resourceGroups" element={ <ResourceGroups /> } />
+                  <Route path="/diagnostics" element={ <Diagnostics /> } />
+                  <Route path="/certificates" element={ <Certificates /> } />
+                  <Route path='*' element={<NotFound />}/>
+                </Routes>
+              </main>
+              <Footer />
+            </div>x
+          </>
+        }
+        { !isLoggedIn && <LoginForm cb={ handleLogin }/> }
       </div>
   );
 }

@@ -1,9 +1,11 @@
 import styles from './Input.module.css';
 
 const Input = ({type, placeholder, label, value, onChange, ...rest}) => {
+
+
     return(
-        <div className={styles.input__container}>
-            {label && <label> { label } </label> }
+        <div className={ styles.input__container }>
+            {label && <label className={ styles.label }> { label } </label> }
             <input 
                 type={ type ?? 'text' } 
                 placeholder={ placeholder ? placeholder : ''} 

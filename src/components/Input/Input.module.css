@@ -1,0 +1,25 @@
+.input__container {
+    display: flex;
+    margin-block-end: 1.5rem;
+    position: relative;
+}
+
+.stacked {
+    flex-direction: column;
+}
+
+.label {
+    background-color: #fff;
+    font-size: 12px;
+    inset-inline-start: .75rem;
+    padding: 0 .375rem;
+    position: absolute;
+    top: -8px;
+}
+
+.input {
+    border: 1px solid var(--app-border-color);
+    border-radius: 6px;
+    padding: 1rem .75rem;
+    width: 100%;
+}

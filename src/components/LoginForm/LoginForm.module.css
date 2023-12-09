@@ -1,0 +1,65 @@
+.login__overlay {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .85);
+    display: flex;
+    height: 100vh;
+    inset-inline-start: 0;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.login__wrapper {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    display: flex;
+    min-height: 460px;
+    width: 90%;
+} 
+
+.login__panel {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%
+}
+
+.login__title {
+    font-weight: 400;
+    margin-block-start: 3rem;
+}
+
+.login__form {
+    align-self: center;
+    flex: 1 0 0;
+    padding: 3rem;
+    width: 40%;
+}
+
+.login__form button {
+    width: 100%;
+}
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+
+    .login__wrapper {
+        width: 680px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .login__wrapper {
+        width: 820px;
+    }
+}
+
+@media (min-width: 1536px) {}

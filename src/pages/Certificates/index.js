@@ -21,8 +21,16 @@ const Certificates = () => {
 
     return(
         <PageLayout title="Certificates">   
-            <Card>
+            <div className="half_half">
+                <Card>
 
+                </Card>
+                <Card>
+
+                </Card>
+            </div>
+            <Card>
+                <Table />
             </Card>
         </PageLayout>
     )

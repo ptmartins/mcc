@@ -10,6 +10,7 @@ const Button = (props) => {
 
     switch(props.type) {
         case 'primary':
+        case 'submit':
             btnClasses += ` ${styles.btn__primary}`;
             break;
         case 'danger':
@@ -31,7 +32,7 @@ const Button = (props) => {
     }
 
     return(
-        <button {...props} className={btnClasses}> {props.children} </button>
+        <button {...props} className={btnClasses} type={props.type.toLowerCase() === 'submit' ? 'submit' : 'button'}> {props.children} </button>
     )
 }
 
