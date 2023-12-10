@@ -1,4 +1,5 @@
 import About from './About';
+import Account from './Account';
 import Applications from './Applications';
 import Certificates from './Certificates';
 import Databases from './Databases';
@@ -10,5 +11,4 @@ import RemoteTools from './RemoteTools';
 import ResourceGroups from './ResourceGroups';
 import Updates from './Updates';
 
-
-export { About, Applications, Certificates, Databases, Diagnostics, Home, Logs, NotFound, RemoteTools, ResourceGroups, Updates };
+export { About, Account, Applications, Certificates, Databases, Diagnostics, Home, Logs, NotFound, RemoteTools, ResourceGroups, Updates };

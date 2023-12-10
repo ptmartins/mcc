@@ -18,7 +18,7 @@ const RemoteTools = () => {
 
     return(
         <PageLayout title="Remote tools">
-            <div className="half_half">
+            <div className="thirds">
                 <Card>
                     {
                         Object.keys(data).map((key, index) => {
