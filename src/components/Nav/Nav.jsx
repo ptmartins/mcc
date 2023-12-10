@@ -25,11 +25,11 @@ const Nav = ({ menus }) => {
                   {menus[key].map((item, index) => {
                     return(
                         <NavLink 
+                          key={ index }
                           to={ item.path } 
                           className = {({ isActive }) =>
                             isActive ? `u-link active ${ styles.nav_link } ${ styles.active }` : `u-link ${ styles.nav_link }`
                           }
-                          exact
                         > 
                           <i className={ styles.icon }> { item.icon } </i>
                           <span className={ styles.txt }> { item.txt } </span>

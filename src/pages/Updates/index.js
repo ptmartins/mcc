@@ -9,18 +9,16 @@ const Updates = () => {
         const response = await fetch('http://localhost:3001/api/updates');
         const res = await response.json();
 
+        console.log(res);
         setUpdates(res);
     }
 
     useEffect(() => {
-        debugger;
         fetchUpdates();
-        console.log(updates);
     }, [])
 
     useEffect(() => {
         setReleases(updates.releases);
-        console.log(releases);
     }, [updates])
 
     return(
