@@ -1,16 +1,23 @@
+import { useState, useEffect } from 'react';
 import { Card, PageLayout, TabMenu, Table} from '../../components';
 
 export default function Logs() {
 
-    const tabs =  [
-        { title: 'Menu 1', content: <p>This is the content of Tab 1.</p> },
-        { title: 'Menu 2', content: <p>This is the content of Tab 2.</p> },
-      ];
+    const [tabs, setTabs] = useState({});
+    const fetchTabs = async () => {
+        const response = await fetch('http://localhost:3001/api/tabs');
+        const result = await response.json();
+
+        setTabs(result);
+    };
+
+    useEffect(() => {
+        fetchTabs();
+    }, []);
 
     return(
         <PageLayout title="Logs">
             <Card>
-                <TabMenu items={ tabs }/>
             </Card>
         </PageLayout>
   

@@ -12,4 +12,5 @@
 .update__note {
     font-size: .9rem;
     margin-block-end: 1.5rem;
+    opacity: .65;
 }

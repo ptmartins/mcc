@@ -1,7 +1,7 @@
 import { useState, UseEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { Nav, Header, Footer, LoginForm } from './components';
-import { Home, Logs, About, Databases, NotFound, Applications, ResourceGroups, Diagnostics, Certificates, Updates } from './pages';
+import { Home, Logs, About, Databases, NotFound, Applications, ResourceGroups, Diagnostics, Certificates, Updates, RemoteTools } from './pages';
 import { FaHome, FaInfoCircle, FaClipboardList, FaCog, FaDatabase, FaBriefcase, FaLayerGroup, FaTools, FaStethoscope } from "react-icons/fa";
 import { HiQueueList } from "react-icons/hi2";
 import { MdAccountCircle, MdOutlineSystemUpdateAlt } from "react-icons/md";
@@ -105,13 +105,15 @@ function App() {
                 <Routes>
                   <Route path="/" element={ <Home /> } />
                   <Route path="/about" element={ <About /> } />
-                  <Route path="/logs" element={ <Logs /> } />
+                  {/* Wait until TabMenu re-think */}
+                  {/* <Route path="/logs" element={ <Logs /> } /> */}  
                   <Route path="/databases" element={ <Databases /> } />
                   <Route path="/applications" element={ <Applications /> } />
                   <Route path="/resourceGroups" element={ <ResourceGroups /> } />
                   <Route path="/diagnostics" element={ <Diagnostics /> } />
                   <Route path="/certificates" element={ <Certificates /> } />
                   <Route path="/updates" element={ <Updates /> } />
+                  <Route path="/remoteTools" element={ <RemoteTools /> } />
                   <Route path='*' element={<NotFound />}/>
                 </Routes>
               </main>

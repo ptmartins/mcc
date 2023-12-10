@@ -6,8 +6,9 @@ import Diagnostics from './Diagnostics';
 import Home from './Home';
 import Logs from './Logs';
 import NotFound from './NotFound';
+import RemoteTools from './RemoteTools';
 import ResourceGroups from './ResourceGroups';
 import Updates from './Updates';
 
 
-export { About, Applications, Certificates, Databases, Diagnostics, Home, Logs, NotFound, ResourceGroups, Updates };
+export { About, Applications, Certificates, Databases, Diagnostics, Home, Logs, NotFound, RemoteTools, ResourceGroups, Updates };

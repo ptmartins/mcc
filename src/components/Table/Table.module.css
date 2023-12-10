@@ -3,16 +3,20 @@
 }
 
 .head {
-    border-block-end: 1px solid var(--app-border-color);
+    background-color: var(--accent-fade);
+    border-radius: 4px;
     display: flex;
-    margin-block-end: .75rem;
-    padding: .1875rem 0 .75rem;
+    padding: .75rem;
 }
 
-.body {
-}
+
 
 .row {
+    border-block-start: 1px solid var(--app-border-color);
     display: flex;
-    padding: .75rem 0;
+    padding: .75rem;
+}
+
+.row:nth-of-type(even) {
+    background-color: var(--fade);
 }

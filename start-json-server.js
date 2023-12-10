@@ -23,6 +23,7 @@ const data14 = require('./data/renditionProfile.json');
 const data15 = require('./data/mappingFiles.json');
 const data16 = require('./data/defaultRights.json');
 const data17 = require('./data/tabs.json');
+const data18 = require('./data/tools.json');
 
 const combinedData = {
   info: data1.info,
@@ -42,7 +43,8 @@ const combinedData = {
   renditions: data14,
   mappings: data15,
   defaultRights: data16,
-  tabs: data17
+  tabs: data17,
+  tools: data18
 };
 
 const router = jsonServer.router(combinedData);
