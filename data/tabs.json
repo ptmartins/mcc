@@ -1,0 +1,93 @@
+{
+    "logList": [
+        {
+            "name": "General",
+            "visible": 1,
+            "dataToggle": "tab",
+            "log_id": "0",
+            "tab_id": "general_tab",
+            "class": ""
+        },
+        {
+            "name": "Adlib",
+            "visible": 0,
+            "dataToggle": "tab",
+            "log_id": "1",
+            "tab_id": "adlib_tab",
+            "class": ""
+        },
+        {
+            "name": "Plugins",
+            "visible": 10,
+            "dataToggle": "dropdown",
+            "log_id": "-1",
+            "tab_id": "plugins_tab",
+            "class": "dropdown"
+        }
+    ],
+    "plugins": {
+        "plugin_count": 10,
+        "plugins": [
+            {
+                "name": "Azure Video Indexer",
+                "log_id": 3,
+                "tab_id": "plugins_sub_tab_3",
+                "version": "7.1.1.872"
+            },
+            {
+                "name": "DocumentConversion Service",
+                "log_id": 4,
+                "tab_id": "plugins_sub_tab_4",
+                "version": "7.1.0.64809"
+            },
+            {
+                "name": "Email Sender",
+                "log_id": 6,
+                "tab_id": "plugins_sub_tab_6",
+                "version": "7.1.1.872"
+            },
+            {
+                "name": "Google Image",
+                "log_id": 7,
+                "tab_id": "plugins_sub_tab_7",
+                "version": "7.1.1.872"
+            },
+            {
+                "name": "Google Video",
+                "log_id": 8,
+                "tab_id": "plugins_sub_tab_8",
+                "version": "7.1.1.872"
+            },
+            {
+                "name": "Image Converter",
+                "log_id": 5,
+                "tab_id": "plugins_sub_tab_5",
+                "version": "7.1.0.63259"
+            },
+            {
+                "name": "REST Plugin",
+                "log_id": 9,
+                "tab_id": "plugins_sub_tab_9",
+                "version": "7.1.1.872"
+            },
+            {
+                "name": "Speechmatics",
+                "log_id": 10,
+                "tab_id": "plugins_sub_tab_10",
+                "version": "7.1.1.872"
+            },
+            {
+                "name": "Subtitle transcoder",
+                "log_id": 11,
+                "tab_id": "plugins_sub_tab_11",
+                "version": "7.1.1.872"
+            },
+            {
+                "name": "Transcoder",
+                "log_id": 12,
+                "tab_id": "plugins_sub_tab_12",
+                "version": "7.1.0.63259"
+            }
+        ]
+    }
+}
