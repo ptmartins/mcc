@@ -17,6 +17,11 @@ const data8 = require('./data/applications.json');
 const data9 = require('./data/schema.json');
 const data10 = require('./data/databases.json');
 const data11 = require('./data/localCertificates.json');
+const data12 = require('./data/fields.json');
+const data13 = require('./data/roles.json');
+const data14 = require('./data/renditionProfile.json');
+const data15 = require('./data/mappingFiles.json');
+const data16 = require('./data/defaultRights.json');
 
 const combinedData = {
   info: data1.info,
@@ -30,7 +35,12 @@ const combinedData = {
   applications: data8.applications,
   schema: data9,
   databases: data10.databases,
-  localCertificates: data11
+  localCertificates: data11,
+  fields: data12,
+  roles: data13,
+  renditions: data14,
+  mappings: data15,
+  defaultRights: data16
 };
 
 const router = jsonServer.router(combinedData);

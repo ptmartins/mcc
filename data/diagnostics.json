@@ -1,29 +1,29 @@
 {
     "dumpfiles": [
-    {
-    "name": "MediaControlCentre.exe(1).19920.dmp",
-    "date": 1698161414,
-    "size": 197048613
-    },
-    {
-    "name": "MediaControlCentre.exe(1).5972.dmp",
-    "date": 1675771119,
-    "size": 179617982
-    },
-    {
-    "name": "MediaControlCentre.exe.19920.dmp",
-    "date": 1698161412,
-    "size": 197048861
-    },
-    {
-    "name": "MediaControlCentre.exe.5972.dmp",
-    "date": 1675771117,
-    "size": 179618182
-    },
-    {
-    "name": "MediaControlCentre.exe.6996.dmp",
-    "date": 1675769165,
-    "size": 86877829
-    }
+        {
+            "name": "MediaControlCentre.exe(1).19920.dmp",
+            "date": 1698161414,
+            "size": 197048613
+        },
+        {
+            "name": "MediaControlCentre.exe(1).5972.dmp",
+            "date": 1675771119,
+            "size": 179617982
+        },
+        {
+            "name": "MediaControlCentre.exe.19920.dmp",
+            "date": 1698161412,
+            "size": 197048861
+        },
+        {
+            "name": "MediaControlCentre.exe.5972.dmp",
+            "date": 1675771117,
+            "size": 179618182
+        },
+        {
+            "name": "MediaControlCentre.exe.6996.dmp",
+            "date": 1675769165,
+            "size": 86877829
+        }
     ]
-    }
+}

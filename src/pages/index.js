@@ -7,6 +7,7 @@ import Home from './Home';
 import Logs from './Logs';
 import NotFound from './NotFound';
 import ResourceGroups from './ResourceGroups';
+import Updates from './Updates';
 
 
-export { About, Applications, Certificates, Databases, Diagnostics, Home, Logs, NotFound, ResourceGroups };
+export { About, Applications, Certificates, Databases, Diagnostics, Home, Logs, NotFound, ResourceGroups, Updates };

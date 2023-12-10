@@ -1,0 +1,224 @@
+{
+    "reserved_fields": [
+    {
+    "name": "pkRecordNumber",
+    "display_name": "recordID",
+    "type": "Number",
+    "class": "None",
+    "reserved": 1
+    },
+    {
+    "name": "guid",
+    "display_name": "guid",
+    "type": "GUID",
+    "class": "None",
+    "reserved": 1
+    },
+    {}
+    ],
+    "fields": [
+    {
+    "name": "Title",
+    "display_name": "Title",
+    "type": "Text",
+    "class": "Title",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "Summary",
+    "display_name": "Summary",
+    "type": "Text",
+    "class": "Summary",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "Date",
+    "display_name": "Date",
+    "type": "DateTime",
+    "class": "Date",
+    "reserved": 0,
+    "contentLanguage": "",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "Network",
+    "display_name": "Network",
+    "type": "Single select",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "gameId",
+    "display_name": "NHL GameID",
+    "type": "Text",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "Ratings",
+    "display_name": "Ratings",
+    "type": "Rating",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "Event",
+    "display_name": "Event",
+    "type": "Text",
+    "class": "Event",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "event_start",
+    "display_name": "event start",
+    "type": "Date",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "event_end",
+    "display_name": "event end",
+    "type": "Date",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "eventdate",
+    "display_name": "Event date",
+    "type": "DateTime",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "eventname",
+    "display_name": "Event name",
+    "type": "Text",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "federations",
+    "display_name": "Federations",
+    "type": "Text",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "venuelocation",
+    "display_name": "Venue location",
+    "type": "Text",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "city",
+    "display_name": "City",
+    "type": "Text",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "countries",
+    "display_name": "Countries",
+    "type": "Text",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "eventyear",
+    "display_name": "Event Year",
+    "type": "Date",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "origcontfmt",
+    "display_name": "origcontfmt",
+    "type": "Text",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "participants",
+    "display_name": "Participants",
+    "type": "Multi select",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "reference",
+    "display_name": "Reference",
+    "type": "Text",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {
+    "name": "ardomename",
+    "display_name": "ardomename",
+    "type": "Text",
+    "class": "None",
+    "reserved": 0,
+    "contentLanguage": "en-GB",
+    "parent_field": "",
+    "table_number": "0"
+    },
+    {}
+    ],
+    "unique_limit": 768,
+    "has_title_field": 1
+    }

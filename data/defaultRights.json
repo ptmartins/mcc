@@ -1,0 +1,42 @@
+{
+    "default_rights": [
+        {
+            "name": "object-creator-org",
+            "role_id": "-3",
+            "type": 2,
+            "viewRight": 0,
+            "updateRight": 0,
+            "downloadRight": 0,
+            "previewRight": 0
+        },
+        {
+            "name": "object-creator",
+            "role_id": "-2",
+            "type": 0,
+            "viewRight": 1,
+            "updateRight": 1,
+            "downloadRight": 1,
+            "previewRight": 0
+        },
+        {
+            "name": "Everyone",
+            "role_id": "0",
+            "type": 1,
+            "viewRight": 1,
+            "updateRight": 0,
+            "downloadRight": 0,
+            "previewRight": 0
+        },
+        {
+            "name": "Administrators",
+            "role_id": "2",
+            "type": 1,
+            "viewRight": 1,
+            "updateRight": 1,
+            "downloadRight": 1,
+            "previewRight": 0
+        },
+        {}
+    ],
+    "error": ""
+}

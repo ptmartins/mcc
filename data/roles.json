@@ -1,0 +1,57 @@
+{
+    "roles_count": "5",
+    "Access_control": true,
+    "roles": [
+    {
+    "name": "Anonymous",
+    "Role type": "0",
+    "role_id": "3",
+    "account": "3",
+    "dynamic": false,
+    "description": "",
+    "weighting": "",
+    "recordquota": 0
+    },
+    {
+    "name": "pedro.martins@imagen.com",
+    "Role type": "0",
+    "role_id": "19",
+    "account": "0",
+    "dynamic": false,
+    "description": "",
+    "weighting": "",
+    "recordquota": 0
+    },
+    {
+    "name": "pedro.martins@imagenevp.com",
+    "Role type": "0",
+    "role_id": "18",
+    "account": "0",
+    "dynamic": false,
+    "description": "",
+    "weighting": "",
+    "recordquota": 0
+    },
+    {
+    "name": "snitramordep@gmail.com",
+    "Role type": "0",
+    "role_id": "20",
+    "account": "0",
+    "dynamic": false,
+    "description": "",
+    "weighting": "",
+    "recordquota": 0
+    },
+    {
+    "name": "superadmin@imagenevp.com",
+    "Role type": "0",
+    "role_id": "4",
+    "account": "0",
+    "dynamic": false,
+    "description": "",
+    "weighting": "",
+    "recordquota": 0
+    }
+    ],
+    "error": ""
+    }
