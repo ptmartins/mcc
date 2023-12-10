@@ -6,6 +6,7 @@
     background-color: var(--accent-fade);
     border-radius: 4px;
     display: flex;
+    font-weight: 600;
     padding: .75rem;
 }
 
@@ -14,6 +15,8 @@
 .row {
     border-block-start: 1px solid var(--app-border-color);
     display: flex;
+    font-size: .9rem;
+    font-weight: 300;
     padding: .75rem;
 }
 
