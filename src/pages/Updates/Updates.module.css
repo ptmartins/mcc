@@ -1,0 +1,15 @@
+.update__version {
+    font-size: 1.3rem;
+    margin-block-end: 1.5rem;
+}
+
+.update__date {
+    display: inline-block;
+    font-size: .9rem;
+    margin-block-end: .75rem;
+}
+
+.update__note {
+    font-size: .9rem;
+    margin-block-end: 1.5rem;
+}
