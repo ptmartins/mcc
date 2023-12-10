@@ -22,6 +22,7 @@ const data13 = require('./data/roles.json');
 const data14 = require('./data/renditionProfile.json');
 const data15 = require('./data/mappingFiles.json');
 const data16 = require('./data/defaultRights.json');
+const data17 = require('./data/tabs.json');
 
 const combinedData = {
   info: data1.info,
@@ -40,7 +41,8 @@ const combinedData = {
   roles: data13,
   renditions: data14,
   mappings: data15,
-  defaultRights: data16
+  defaultRights: data16,
+  tabs: data17
 };
 
 const router = jsonServer.router(combinedData);
