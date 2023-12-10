@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { PageLayout, Card } from "../../components";
+import { PageLayout, Card, Accordion } from "../../components";
 import styles from './Updates.module.css';
 
 const Updates = () => {
 
     let [updates, setUpdates] = useState([]);
     const [releases, setReleases] = useState([]);
+    const [accordionData, setAccordionData] = useState([]);
     const fetchUpdates = async () => {
         const response = await fetch('http://localhost:3001/api/updates');
         const res = await response.json();
@@ -13,34 +14,59 @@ const Updates = () => {
         setUpdates(res);
     }
 
+
+    /**
+     * Fetch updates data
+     */
     useEffect(() => {
         fetchUpdates();
     }, [])
 
+
+    /**
+     * On updatesData, set releases
+     */
     useEffect(() => {
         setReleases(updates.releases);
     }, [updates])
 
+
+    /**
+     * On releases, set Accordion data
+     */
+    useEffect(() => {
+        if(releases) {
+            const updatedData = releases.map(release => {
+
+                let result = {
+                    title: null,
+                    content: null
+                }
+
+                Object.keys(release).map(item => {
+                    switch(item) {
+                        case('version'):
+                            result.title = release[item];
+                            break;
+                        case('release_notes'):
+                            result.content = release[item][0].note;  
+                            break;
+                        default: break;                  
+                    }
+                })
+
+                return result;
+            })
+
+            setAccordionData(updatedData);
+        }
+
+    }, [releases])
+
     return(
         <PageLayout title="Updates">
-            {releases ? 
-                releases.map((release, index) => {
-                    return(
-                        <Card key={ index }>
-                            <h4 className={ styles.update__version }> {release.version} </h4>
-                            <span className={ styles.update__date }> {release.releaseDate} </span>
-                            <div className="">
-                                { release.release_notes[0].note.split('\n\n\n').map((paragraph, index) => {
-                                        return(
-                                            <p className={ styles.update__note }> { paragraph } </p>    
-                                        )
-                                    })  
-                                }
-                            </div>
-                        </Card>    
-                    )
-                }) :
-                ''
+            {
+                accordionData.length > 0 ? <Accordion items={ accordionData } /> : ''
             }
         </PageLayout>        
     )
