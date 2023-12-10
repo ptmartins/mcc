@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { PageLayout, Card, Table } from "../../components";
+import { PageLayout, Card, Table, KeyValue, Button } from "../../components";
+import styles from './Certificates.module.css';
 
 const Certificates = () => {
 
@@ -13,24 +14,56 @@ const Certificates = () => {
 
         setCertificates(certsResult);
         setLocalCerts(localCertsResult);
-    }
+
+        console.log(localCerts)
+    };
 
     useEffect(() => {
         fetchCertificates();
     }, [])
 
+
+    const columnsToShow = [
+        {
+            key: 'issuedToCN',
+            label: 'Issued to',
+            width: '30%'
+        },
+        {
+            key: 'issuedByCN',
+            label: 'Issued by',
+            width: '35%'
+        },
+        {
+            key: 'validFrom',
+            label: 'Valid from',
+            width: '35%'
+        }
+    ];
+
+
     return(
         <PageLayout title="Certificates">   
             <div className="half_half">
-                <Card>
-
-                </Card>
-                <Card>
-
-                </Card>
+                {
+                    certificates.map((certificate, index) => {
+                        return(
+                            <Card key={ index } >
+                                <KeyValue label="Issued to:" value={ certificate.issuedTo } />
+                                <KeyValue label="Issued by:" value={ certificate.issuedBy } />
+                                <KeyValue label="Valid from:" value={ certificate.validFrom } />
+                                <div className={ styles.fingerprint__container }>
+                                    <h4 className={ styles.fingerprint__title }> SHA1 Fingerprint: </h4>
+                                    <div className={ styles.fingerprint }> {certificate.fingerprint } </div>
+                                </div>
+                                <Button type="primary" className={ styles.fingerprint__btn } style={{display: 'block', marginInlineStart: 'auto'}}>Update</Button> 
+                            </Card>   
+                        )
+                    })
+                }
             </div>
             <Card>
-                <Table />
+                <Table data={ localCerts.local_certificates } columns={ columnsToShow }/>
             </Card>
         </PageLayout>
     )
