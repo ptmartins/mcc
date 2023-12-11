@@ -1,5 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Card, PageLayout, KeyValue } from '../../components';
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend,
+  } from 'chart.js';
+import { Line } from 'react-chartjs-2';
 import { fileSizeConvert, formatTimeStamp } from '../../utils';
 
 export default function Home() {
@@ -9,10 +20,13 @@ export default function Home() {
         const response = await fetch('http://localhost:3001/api/general');
         const result = await response.json();
         setData(result); 
-
+        
         // Just to prove it's polling the data every 10 secs
         console.log(result);
-    }
+    };
+
+
+
 
     // Fetch data every 10 secs like our MCC
     useEffect(() => {
