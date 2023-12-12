@@ -7,9 +7,7 @@ const Certificates = () => {
     const [certificates, setCertificates] = useState([]);
     const [localCerts, setLocalCerts] = useState([]);
     const fetchCertificates = async () => {
-        // const certsResponse = await fetch('http://localhost:3001/api/certificates');
-        // const localCertsResponse = await fetch('http://localhost:3001/api/localCertificates');
-        const certsResponse = await fetch('http://mcc-dataserver.vercel.app/api/certificates');
+        const certsResponse = await fetch('https://mcc-dataserver.vercel.app/api/certificates');
         const localCertsResponse = await fetch('https://mcc-dataserver.vercel.app/api/localCertificates');
         const certsResult = await certsResponse.json();
         const localCertsResult = await localCertsResponse.json();
