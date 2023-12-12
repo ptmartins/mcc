@@ -1,14 +1,37 @@
 {
-    "functions": {
-      "start-json-server.js": {
-        "memory": 1024,
-        "includeFiles": "/data/*.json"
-      }
-    },
-    "rewrites": [
+    "version": 2,
+    "builds": [
       {
-        "source": "/(.*)",
-        "destination": "start-json-server.js"
+        "src": "start-json-server.js",
+        "use": "@vercel/node",
+        "config": {
+          "includeFiles": [
+                "/data/applicatons.json",
+                "/data/certificates.json",
+                "/data/databases.json",
+                "/data/defaultRights.json",
+                "/data/diagnostics.json",
+                "/data/fields.json",
+                "/data/general.json",
+                "/data/info.json",
+                "/data/license.json",
+                "/data/localCertificates.json",
+                "/data/mappingFiles.json",
+                "/data/renditionProfile.json",
+                "/data/resourceGroups.json",
+                "/data/roles.json",
+                "/data/schema.json",
+                "/data/tabs.json",
+                "/data/tools.json",
+                "/data/updates.json"
+            ]
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "start-json-server.js"
       }
     ]
   }
