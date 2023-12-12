@@ -119,7 +119,7 @@ function App() {
                 </Routes>
               </main>
               <Footer />
-            </div>x
+            </div>
           </>
         }
         { !isLoggedIn && <LoginForm cb={ handleLogin }/> }

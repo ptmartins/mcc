@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { PageLayout, Card, Table, KeyValue, Button } from "../../components";
+import { PageLayout, Card, Table, KeyValue, Button, CopyToClipboard } from "../../components";
 import styles from './Certificates.module.css';
 
 const Certificates = () => {
@@ -54,7 +54,7 @@ const Certificates = () => {
                                 <KeyValue label="Valid from:" value={ certificate.validFrom } />
                                 <div className={ styles.fingerprint__container }>
                                     <h4 className={ styles.fingerprint__title }> SHA1 Fingerprint: </h4>
-                                    <div className={ styles.fingerprint }> {certificate.fingerprint } </div>
+                                    <CopyToClipboard value={ certificate.fingerprint } cssClass={ styles.fingerprint }/>
                                 </div>
                                 <Button type="primary" className={ styles.fingerprint__btn } style={{display: 'block', marginInlineStart: 'auto'}}>Update</Button> 
                             </Card>   

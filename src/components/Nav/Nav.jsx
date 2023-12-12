@@ -8,7 +8,7 @@ const Nav = ({ menus }) => {
 
   return (
     <div className={ styles.nav }>
-      <div className="logo">
+      <div className="logo" >
         <img src='/images/logo.png' alt="Imagen logo" title="Imagen" className={styles.logo} />
       </div>
       <div className={ styles.menu }>

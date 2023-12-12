@@ -55,13 +55,40 @@ ul {
 .half_half,
 .thirds {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .half_half > * {
-  width: 49%;
+  width: 100%;
 }
 
 .thirds > * {
   width: 33%;
 }
+
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+  .half_half,
+  .thirds {
+    flex-wrap: nowrap;
+  }
+
+  .half_half > * {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 1536px) {}

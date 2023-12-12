@@ -1,6 +1,7 @@
 import Accordion from './Accordion/Accordion'
 import Button from './Button/Button';
 import Card from './Card/Card';
+import CopyToClipboard from './CopyToClipboard/CopyToClipboard';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Input from './Input/Input';
@@ -9,6 +10,6 @@ import LoginForm from './LoginForm/LoginForm';
 import Nav from './Nav/Nav';
 import PageLayout from './PageLayout/PageLayout';
 import Table from './Table/Table';
-import TabMenu from './TabMenu/TabMenu';
+import TabMenu from './TabMenu/TabMenu'; 
 
-export { Accordion, Button, Card, Footer, Header, Input, KeyValue, LoginForm, Nav, PageLayout, Table, TabMenu };
+export { Accordion, Button, Card, CopyToClipboard, Footer, Header, Input, KeyValue, LoginForm, Nav, PageLayout, Table, TabMenu };

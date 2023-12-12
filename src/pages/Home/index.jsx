@@ -13,6 +13,16 @@ import {
 import { Line } from 'react-chartjs-2';
 import { fileSizeConvert, formatTimeStamp } from '../../utils';
 
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend
+);    
+
 export default function Home() {
 
     const [data, setData] = useState([]);
@@ -24,9 +34,6 @@ export default function Home() {
         // Just to prove it's polling the data every 10 secs
         console.log(result);
     };
-
-
-
 
     // Fetch data every 10 secs like our MCC
     useEffect(() => {

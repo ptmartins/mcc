@@ -1,0 +1,17 @@
+.btn {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    border-radius: 4px;
+    color: var(--accent-color);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.4rem;;
+    height: 32px;
+    inset-inline-end: .75rem;
+    inset-block-start: 50%;
+    justify-content: center;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 32px;
+}
