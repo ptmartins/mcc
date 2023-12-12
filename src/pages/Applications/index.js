@@ -5,7 +5,7 @@ const Applications = () => {
 
     const [apps, setApps] = useState([]);
     const fetchApps = async () => {
-        const response = await fetch('http://localhost:3001/api/applications');
+        const response = await fetch('https://mcc-dataserver.vercel.app/api/applications');
         const result = await response.json();
 
         console.log(result);

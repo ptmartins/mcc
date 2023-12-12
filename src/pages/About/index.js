@@ -8,11 +8,11 @@ import styles from './About.module.css';
 export default function About() {
 
     const [info, setInfo] = useState([]);
-    const [plugins, setPlugins] = useState([]);
+    const [license, setLicense] = useState({});
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://localhost:3001/api/info');
+            const response = await fetch('https://mcc-dataserver.vercel.app/api/info');
             const result = await response.json();
             setInfo(result); 
         }
@@ -22,10 +22,10 @@ export default function About() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://localhost:3001/api/plugins');
+            const response = await fetch('https://mcc-dataserver.vercel.app/api/license');
             const result = await response.json();
             if(result) {
-                setPlugins(result); 
+                setLicense(result); 
             }
         }
 
@@ -56,7 +56,7 @@ export default function About() {
             </div>
             <div className={ `half_half` }>
                 <Card title="Plugins" className={ styles.plugins }>
-                    { plugins.map(plugin => {
+                    { license.plugins.map(plugin => {
                         return(
                             <KeyValue key={ uuid() } label={ plugin.title } value={ plugin.version } />
                         )

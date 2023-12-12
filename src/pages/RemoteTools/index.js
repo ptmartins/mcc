@@ -6,7 +6,7 @@ const RemoteTools = () => {
 
     const [data, setData] = useState([]);
     const fetchData = async () => {
-        const response = await fetch('http://localhost:3001/api/tools');
+        const response = await fetch('https://mcc-dataserver.vercel.app/api/tools');
         const result = await response.json();
 
         setData(result);

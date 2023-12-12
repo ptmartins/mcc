@@ -6,7 +6,7 @@ const Databases = () => {
 
     const [databases, setDatabases] = useState([]);
     const fetchDBData = async () => {
-        const response = await fetch('http://localhost:3001/api/databases');
+        const response = await fetch('https://mcc-dataserver.vercel.app/databases');
         const result = await response.json();
 
         if(result) {

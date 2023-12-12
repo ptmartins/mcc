@@ -5,10 +5,10 @@ const ResourceGroups = () => {
 
     const [groups, setGroups] = useState([]);
     const fetchGroups = async () => {
-        const response = await fetch('http://localhost:3001/api/resourceGroups');
+        const response = await fetch('https://mcc-dataserver.vercel.app/api/resourceGroups');
         const result = await response.json();
 
-        setGroups(result.resourceGroups);
+        setGroups(result);
     }
 
     useEffect(() => {

@@ -27,7 +27,8 @@ export default function Home() {
 
     const [data, setData] = useState([]);
     const fetchData = async () => {
-        const response = await fetch('http://localhost:3001/api/general');
+        // const response = await fetch('http://localhost:3001/api/general');
+        const response = await fetch('https://mcc-dataserver.vercel.app/api/general');  
         const result = await response.json();
         setData(result); 
         

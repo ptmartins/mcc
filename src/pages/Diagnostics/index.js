@@ -5,7 +5,8 @@ const Diagnostics = () => {
 
     const [diagnostics, setDiagnostics] = useState([]);
     const fetchDiagnostics = async () => {
-        const response = await fetch('http://localhost:3001/api/diagnostics');
+        // const response = await fetch('http://localhost:3001/api/diagnostics');
+        const response = await fetch('https://mcc-dataserver.vercel.app/api/diagnostics');
         const result = await response.json();
 
         setDiagnostics(result);
