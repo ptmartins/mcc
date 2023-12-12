@@ -30,7 +30,7 @@
     ],
     "routes": [
       {
-        "src": "/(.*)",
+        "src": "localhost:3001/api/(.*)",
         "dest": "start-json-server.js"
       }
     ]
