@@ -8,7 +8,6 @@ const Applications = () => {
         const response = await fetch('https://mcc-dataserver.vercel.app/api/applications');
         const result = await response.json();
 
-        console.log(result);
         setApps(result);
     }
 

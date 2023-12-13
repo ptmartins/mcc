@@ -9,6 +9,7 @@ export default function About() {
 
     const [info, setInfo] = useState([]);
     const [license, setLicense] = useState({});
+    const [plugins, setPlugins] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -24,8 +25,10 @@ export default function About() {
         const fetchData = async () => {
             const response = await fetch('https://mcc-dataserver.vercel.app/api/license');
             const result = await response.json();
+
             if(result) {
                 setLicense(result); 
+                setPlugins(result.plugins);
             }
         }
 
@@ -56,11 +59,13 @@ export default function About() {
             </div>
             <div className={ `half_half` }>
                 <Card title="Plugins" className={ styles.plugins }>
-                    { license.plugins.map(plugin => {
-                        return(
-                            <KeyValue key={ uuid() } label={ plugin.title } value={ plugin.version } />
-                        )
-                    }) }
+                    {   plugins.map(plugin => {
+                            return(
+                                <KeyValue key={ uuid() } label={ plugin.title } value={ plugin.version } />
+                            )
+                        }) 
+                    }
+                    { console.log(license) }
                 </Card>
             </div>
         </PageLayout>

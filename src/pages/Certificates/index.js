@@ -14,8 +14,6 @@ const Certificates = () => {
 
         setCertificates(certsResult);
         setLocalCerts(localCertsResult);
-
-        console.log(localCerts)
     };
 
     useEffect(() => {

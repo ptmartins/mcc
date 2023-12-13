@@ -13,7 +13,6 @@ const ResourceGroups = () => {
 
     useEffect(() => {
         fetchGroups();
-        console.log(groups);
     }, [])
 
     const columnsToShow = [

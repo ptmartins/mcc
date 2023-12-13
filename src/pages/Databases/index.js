@@ -11,7 +11,6 @@ const Databases = () => {
 
         if(result) {
             setDatabases(result);
-            console.log(databases);
         }
     }
 
