@@ -1,0 +1,70 @@
+.label {
+    cursor: pointer;
+    display: block;
+    margin-bottom: .75rem;
+    padding-inline-start: 30px;
+    position: relative;
+    user-select: none;
+}
+
+.input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+}
+
+.checkmark {
+    border: 2px solid #6a6a6a;
+    border-radius: 50%;
+    display: inline-block;
+    height: 22px;
+    inset-inline-start: 0;
+    position: absolute;
+    top: 0;
+    width: 22px;
+}
+
+.checkmark::after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: '';
+    display: none;
+    height: 9px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+}
+
+input:checked ~ .checkmark {
+    background-color: #335ed7;
+    border-color: #335ed7;
+}
+
+input:checked ~ .checkmark::after {
+    display: block;
+}
+
+.txt {
+    margin-inline-start: .1875rem;
+}   
+
+@keyframes toggleOnCheckbox {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -85%) scale(0) rotate(45deg);
+    }
+  
+    70% {
+      opacity: 1;
+      transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+    }
+    
+    100% {
+      transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+    }
+}

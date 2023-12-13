@@ -106,7 +106,7 @@ function App() {
                   <Route path="/" element={ <Home /> } />
                   <Route path="/about" element={ <About /> } />
                   {/* Wait until TabMenu re-think */}
-                  {/* <Route path="/logs" element={ <Logs /> } /> */}  
+                  <Route path="/logs" element={ <Logs /> } />  
                   <Route path="/databases" element={ <Databases /> } />
                   <Route path="/applications" element={ <Applications /> } />
                   <Route path="/resourceGroups" element={ <ResourceGroups /> } />
