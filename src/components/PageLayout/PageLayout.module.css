@@ -3,8 +3,18 @@
     padding: 1.5rem 0;
 }
 
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 1.8rem;
+}
+
+.header > *:nth-child(2) {
+    margin-inline-start: auto;
+}
+
 .title {
     font-size: 1.8rem;
-    margin-block-end: 1.8rem;
     text-transform: uppercase;
 }

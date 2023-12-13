@@ -12,7 +12,13 @@ const Databases = () => {
         if(result) {
             setDatabases(result);
         }
-    }
+    };
+    const actions = [
+        {
+            type: 'primary',
+            label: 'Add'
+        }
+    ];
 
     useEffect(() => {
         fetchDBData();
@@ -42,7 +48,7 @@ const Databases = () => {
     ];
 
     return(
-        <PageLayout title="Databases">
+        <PageLayout title="Databases" actions={ actions }>
             <Card>
                 <Table data={ databases } columns={ columnsToShow } />
             </Card>

@@ -9,7 +9,13 @@ const Applications = () => {
         const result = await response.json();
 
         setApps(result);
-    }
+    };
+    const actions = [
+        {
+            type: 'primary',
+            label: 'Add Workflow Editor'
+        }
+    ];
 
     useEffect(() => {
         fetchApps();
@@ -39,7 +45,7 @@ const Applications = () => {
     ];
 
     return(
-        <PageLayout title="Applications">   
+        <PageLayout title="Applications" actions= { actions }>   
             <Card>
                 <Table data={ apps } columns={ columnsToShow }/>
             </Card>

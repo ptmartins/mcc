@@ -9,7 +9,17 @@ const ResourceGroups = () => {
         const result = await response.json();
 
         setGroups(result);
-    }
+    };
+    const actions = [
+        {
+            type: 'primary',
+            label: 'Add'
+        },
+        {
+            type: null,
+            label: 'Refresh'
+        }
+    ];
 
     useEffect(() => {
         fetchGroups();
@@ -29,7 +39,7 @@ const ResourceGroups = () => {
     ];
 
     return(
-        <PageLayout title="Resource groups">   
+        <PageLayout title="Resource groups" actions={ actions }>   
             <Card>
                 <Table data={ groups } columns={ columnsToShow }/>
             </Card>
