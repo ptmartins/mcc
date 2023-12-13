@@ -1,7 +1,7 @@
 import { useState, UseEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { Nav, Header, Footer, LoginForm } from './components';
-import { Home, Logs, About, Databases, NotFound, Applications, ResourceGroups, Diagnostics, Certificates, Updates, RemoteTools, Account, General } from './pages';
+import { Home, Logs, About, Databases, NotFound, Applications, ResourceGroups, Diagnostics, Certificates, Updates, RemoteTools, Account, General, QueueManagement } from './pages';
 import { FaHome, FaInfoCircle, FaClipboardList, FaCog, FaDatabase, FaBriefcase, FaLayerGroup, FaTools, FaStethoscope } from "react-icons/fa";
 import { HiQueueList } from "react-icons/hi2";
 import { MdAccountCircle, MdOutlineSystemUpdateAlt } from "react-icons/md";
@@ -115,6 +115,7 @@ function App() {
                   <Route path="/updates" element={ <Updates /> } />
                   <Route path="/remoteTools" element={ <RemoteTools /> } />
                   <Route path="/account" element={ <Account /> } />
+                  <Route path="/queue" element={ <QueueManagement /> } />
                   <Route path="/general" element={ <General /> } />
                   <Route path='*' element={<NotFound />}/>
                 </Routes>

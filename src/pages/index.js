@@ -8,8 +8,9 @@ import General from './General';
 import Home from './Home';
 import Logs from './Logs';
 import NotFound from './NotFound';
+import QueueManagement from './QueueManagement';
 import RemoteTools from './RemoteTools';
 import ResourceGroups from './ResourceGroups';
 import Updates from './Updates';
 
-export { About, Account, Applications, Certificates, Databases, Diagnostics, General, Home, Logs, NotFound, RemoteTools, ResourceGroups, Updates };
+export { About, Account, Applications, Certificates, Databases, Diagnostics, General, Home, Logs, NotFound, QueueManagement, RemoteTools, ResourceGroups, Updates };
