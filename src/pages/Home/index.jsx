@@ -23,15 +23,40 @@ ChartJS.register(
     Legend
 );    
 
+const setTimeLabels = (count, hoursInterval) => {
+    const now = new Date().getTime();
+    const interval = ((hoursInterval * 60) / count) * 60 * 1000;
+    let labels = [];
+
+    let res = now;
+
+    for(let i = count; i > 0; i--) {
+        res -= interval;
+        labels.push(new Date(res));
+    }
+
+    labels = labels.map(label => label.toLocaleTimeString());
+
+    return labels;
+}
+
 export default function Home() {
 
     const [data, setData] = useState([]);
+    const [labels, setLabels] = useState([]);
+    const [chartData, setChartData] = useState({});
+    const chartOptions = {
+        responsive: true
+    };
+
+    /**
+     * Fetch data 
+     */
     const fetchData = async () => {
-        // const response = await fetch('http://localhost:3001/api/general');
         const response = await fetch('https://mcc-dataserver.vercel.app/api/general');  
         const result = await response.json();
         setData(result); 
-        
+
         // Just to prove it's polling the data every 10 secs
         console.log(result);
     };
@@ -46,6 +71,27 @@ export default function Home() {
 
         return () => clearInterval(dataInterval);
     }, []);
+
+    useEffect(() => {
+        if(data.version) {
+            setTimeout(() => {
+                setLabels(setTimeLabels(data.jobs_completed_count.length, 12));
+            }, 2000) 
+        }
+    }, [data]);
+
+    useEffect(() => {
+        if(labels.length > 0) {
+            setChartData({
+                labels,
+                datasets: [
+                    {
+                        data: data.jobs_completed_count.map(job => job.item)
+                    }
+                ]
+            })
+        }
+    }, [labels]);
 
     return(
         <PageLayout title="Home">
@@ -69,7 +115,7 @@ export default function Home() {
             </div>
             <div className={ `half_half` }>
                 <Card title="Jobs completed in the last 12 hours">
-
+                    <Line options={ chartOptions } data= { chartData } />
                 </Card>
                 <Card title="Jobs failed in the last 12 hours">
 

@@ -3,6 +3,7 @@
 :root {
   --bg-color: #f3f4f6;
   --fade: #fbfbfb;
+  --fade-dark: #efefef; 
   --font-color: #626f7c; 
   --title-color: #232a36;
   --accent-color: #3b63f6;

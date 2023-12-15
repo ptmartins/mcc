@@ -8,7 +8,6 @@ const Updates = () => {
     const [releases, setReleases] = useState([]);
     const [accordionData, setAccordionData] = useState([]);
     const fetchUpdates = async () => {
-        // const response = await fetch('http://localhost:3001/api/updates');
         const response = await fetch('https://mcc-dataserver.vercel.app/api/updates');
         const res = await response.json();
 
