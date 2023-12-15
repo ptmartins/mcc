@@ -91,7 +91,7 @@ export default function Home() {
                 ]
             })
         }
-    }, [labels]);
+    }, [data, labels]);
 
     return(
         <PageLayout title="Home">
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             <div className={ `half_half` }>
                 <Card title="Jobs completed in the last 12 hours">
-                    <Line options={ chartOptions } data= { chartData } />
+                    { chartData.datasets.length > 0 ?? <Line options={ chartOptions } data= { chartData } /> }
                 </Card>
                 <Card title="Jobs failed in the last 12 hours">
 
