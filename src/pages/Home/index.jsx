@@ -57,14 +57,28 @@ export default function Home() {
         const result = await response.json();
         setData(result); 
 
-        // Just to prove it's polling the data every 10 secs
-        console.log(result);
+        // if (result && result.jobs_completed_count) {
+        //     const count = result.jobs_completed_count.length;
+    
+        //     if (!labels.length && count > 0) {
+        //         setLabels(setTimeLabels(count, 12));
+        //     }
+    
+        //     setChartData({
+        //         labels: labels.length ? labels : setTimeLabels(count, 12),
+        //         datasets: [
+        //             {
+        //                 data: result.jobs_completed_count.map(job => Number(job.item))
+        //             }
+        //         ]
+        //     });
+        // }
     };
 
     // Fetch data every 10 secs like our MCC
     useEffect(() => {
         fetchData();
-
+        
         const dataInterval = setInterval(() => {
             fetchData();
         }, 10000)
@@ -72,6 +86,9 @@ export default function Home() {
         return () => clearInterval(dataInterval);
     }, []);
 
+    useEffect(() => {
+        console.log(chartData);
+    }, [chartData]); 
 
     return(
         <PageLayout title="Home">
@@ -95,7 +112,7 @@ export default function Home() {
             </div>
             <div className={ `half_half` }>
                 <Card title="Jobs completed in the last 12 hours">
-                   {/* <Line options={ chartOptions } data= { chartData } /> */}
+
                 </Card>
                 <Card title="Jobs failed in the last 12 hours">
 

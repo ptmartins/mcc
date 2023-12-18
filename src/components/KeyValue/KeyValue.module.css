@@ -1,7 +1,13 @@
 .keyValue {
     align-items: center;
+    border-block-end: 1px solid var(--fade-dark);
     display: flex;
-    margin-block-end: .75rem;
+    margin-block-end: .375rem;
+    padding: .375rem 0;
+}
+
+.keyValue:last-child {
+    border-block-end: 0;
 }
 
 .key,
